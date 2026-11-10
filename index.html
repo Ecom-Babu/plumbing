@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rainey Plumbing & Heating, LLC | Boilers, Radiant Heat & Plumbing in Vermont</title>
+<meta name="description" content="Fully licensed & insured plumbing and heating in Danville and Middlebury, VT. High-efficiency boilers, hydronic radiant systems, new construction and remodels statewide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{pd:'#0B132B',sd:'#1C2541',cu:'#EA580C',hy:'#0284C7'},fontFamily:{head:['Plus Jakarta Sans','sans-serif'],body:['Inter','sans-serif']}}}}
+</script>
+<style>
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#0B132B;color:#e2e8f0;padding-bottom:76px}
+@media(min-width:768px){body{padding-bottom:0}}
+h1,h2,h3,h4,.fh{font-family:'Plus Jakarta Sans',sans-serif}
+.glass{background:rgba(255,255,255,.05);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.1)}
+.ph{background:linear-gradient(135deg,#1C2541,#0B132B 60%,#EA580C33)}
+.view{display:none}.view.active{display:block;animation:vin .35s ease}
+@keyframes vin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.navl{position:relative;color:#cbd5e1;transition:.2s}.navl:hover{color:#fff}
+.navl.on{color:#fff}.navl.on:after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:#EA580C;border-radius:2px}
+.zoom img{transition:transform .6s ease}.zoom:hover img{transform:scale(1.07)}
+.opt{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);transition:.2s;cursor:pointer}
+.opt:hover{border-color:#EA580C}.opt.sel{border-color:#EA580C;background:rgba(234,88,12,.15)}
+.faq-b{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.field{width:100%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:.6rem;padding:.75rem .9rem;color:#fff}
+.field:focus{outline:2px solid #0284C7;border-color:transparent}
+.field option{color:#0B132B}
+:focus-visible{outline:2px solid #EA580C;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.pop{animation:pop .35s cubic-bezier(.2,1.4,.4,1)}@keyframes pop{from{transform:scale(.8);opacity:0}to{transform:none;opacity:1}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="sticky top-0 z-40 glass" style="background:rgba(11,19,43,.85)">
+ <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-3">
+  <button data-go="home" class="flex items-center gap-3 min-w-0">
+   <span class="ph w-10 h-10 rounded-lg border border-white/10 overflow-hidden bg-black flex-none"><img data-src="logo.jpg" alt="Rainey Plumbing & Heating logo" class="w-full h-full object-cover"></span>
+   <span class="fh font-bold text-white text-sm sm:text-base truncate">Rainey Plumbing & Heating</span>
+  </button>
+  <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+   <button class="navl" data-go="home">Home</button><button class="navl" data-go="services">Services</button><button class="navl" data-go="projects">Project Gallery</button><button class="navl" data-go="about">About Chandler</button><button class="navl" data-go="contact">Get a Quote</button>
+  </nav>
+  <a href="tel:+18022743436" class="hidden md:inline-flex items-center gap-2 bg-cu hover:bg-orange-500 text-white font-bold px-4 py-2 rounded-lg text-sm"><i data-lucide="phone" class="w-4 h-4"></i>Call (802) 274-3436</a>
+  <button id="burger" class="md:hidden p-2 rounded-lg border border-white/15" aria-label="Open menu" aria-expanded="false"><i data-lucide="menu" class="w-6 h-6"></i></button>
+ </div>
+ <div id="mmenu" class="md:hidden overflow-hidden transition-all duration-300" style="max-height:0">
+  <div class="px-4 pb-4 grid gap-1 text-base">
+   <button class="navl text-left py-3 border-b border-white/10" data-go="home">Home</button>
+   <button class="navl text-left py-3 border-b border-white/10" data-go="services">Services</button>
+   <button class="navl text-left py-3 border-b border-white/10" data-go="projects">Project Gallery</button>
+   <button class="navl text-left py-3 border-b border-white/10" data-go="about">About Chandler</button>
+   <button class="navl text-left py-3" data-go="contact">Get a Quote</button>
+  </div>
+ </div>
+</header>
+
+<main>
+<!-- HOME -->
+<section id="view-home" class="view active">
+ <div class="relative overflow-hidden">
+  <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-cu/20 blur-3xl"></div>
+  <div class="absolute top-40 -left-32 w-96 h-96 rounded-full bg-hy/20 blur-3xl"></div>
+  <div class="relative max-w-7xl mx-auto px-4 py-12 md:py-20 grid lg:grid-cols-2 gap-10 items-center">
+   <div>
+    <span class="glass inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs sm:text-sm text-orange-200"><i data-lucide="shield-check" class="w-4 h-4 text-cu"></i>Fully Licensed & Insured • Serving Danville, Middlebury & All of Vermont</span>
+    <h1 class="mt-5 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">Precision Hydronic Heating, Boiler Upgrades & Custom Plumbing Built for Vermont Winters.</h1>
+    <p class="mt-5 text-slate-300 text-base sm:text-lg max-w-xl">Nearly a decade of master-craftsmanship in high-efficiency boilers, radiant floor heating, new construction rough-ins, and well/septic systems.</p>
+    <div class="mt-7 flex flex-col sm:flex-row gap-3">
+     <button data-go="contact" class="bg-cu hover:bg-orange-500 text-white font-bold px-6 py-4 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-cu/30">Get a Free Project Estimate<i data-lucide="arrow-right" class="w-5 h-5"></i></button>
+     <a href="tel:+18022743436" class="glass text-white font-bold px-6 py-4 rounded-xl flex items-center justify-center gap-2 hover:border-hy"><i data-lucide="phone" class="w-5 h-5 text-hy"></i>Tap to Call: (802) 274-3436</a>
+    </div>
+    <p class="mt-5 text-sm text-slate-400 flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-cu"></i>We travel across Vermont for remodels & new construction!</p>
+   </div>
+   <div class="relative">
+    <div class="glass rounded-3xl p-2 shadow-2xl"><div class="ph zoom rounded-2xl overflow-hidden aspect-[4/3]"><img data-src="image 1.jpg" alt="6-zone copper hydronic manifold with IBC wall-hung boiler" class="w-full h-full object-cover"></div></div>
+    <div class="absolute -bottom-5 left-4 right-4 sm:left-auto sm:right-6 sm:w-72 glass rounded-2xl p-4" style="background:rgba(28,37,65,.92)">
+     <div class="flex items-center gap-3"><i data-lucide="award" class="w-8 h-8 text-cu flex-none"></i><p class="text-sm text-white font-semibold">10+ Years Trade Experience<br><span class="text-slate-300 font-normal">100% Code-Compliant Craftsmanship</span></p></div>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <!-- Trust bar -->
+ <div class="max-w-7xl mx-auto px-4 mt-10 grid grid-cols-2 lg:grid-cols-4 gap-3">
+  <div class="glass rounded-2xl p-5"><i data-lucide="wrench" class="w-6 h-6 text-cu"></i><p class="fh text-white font-bold text-lg mt-2">Almost 10 Yrs</p><p class="text-sm text-slate-400">Hands-on trade experience</p></div>
+  <div class="glass rounded-2xl p-5"><i data-lucide="building-2" class="w-6 h-6 text-hy"></i><p class="fh text-white font-bold text-lg mt-2">3+ Yrs Established</p><p class="text-sm text-slate-400">Licensed & insured LLC</p></div>
+  <div class="glass rounded-2xl p-5"><i data-lucide="flame" class="w-6 h-6 text-cu"></i><p class="fh text-white font-bold text-lg mt-2">Oil & Propane</p><p class="text-sm text-slate-400">Specialists</p></div>
+  <div class="glass rounded-2xl p-5"><i data-lucide="truck" class="w-6 h-6 text-hy"></i><p class="fh text-white font-bold text-lg mt-2">Statewide</p><p class="text-sm text-slate-400">We travel for new builds & remodels</p></div>
+ </div>
+
+ <!-- Services preview -->
+ <div class="max-w-7xl mx-auto px-4 mt-16">
+  <div class="flex items-end justify-between gap-4 flex-wrap"><div><h2 class="text-2xl sm:text-3xl font-extrabold text-white">Flagship specialties</h2><p class="text-slate-400 mt-1">Heating and plumbing, done by one person who answers the phone.</p></div>
+  <button data-go="services" class="text-cu font-bold flex items-center gap-1 hover:underline">Explore All Services <i data-lucide="arrow-right" class="w-4 h-4"></i></button></div>
+  <div id="svc-preview" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+ </div>
+
+ <!-- Estimator -->
+ <div class="max-w-4xl mx-auto px-4 mt-16">
+  <div class="glass rounded-3xl p-5 sm:p-8">
+   <div class="flex items-center gap-3"><span class="bg-cu/20 text-cu p-2 rounded-lg"><i data-lucide="calculator" class="w-6 h-6"></i></span><div><h2 class="text-xl sm:text-2xl font-extrabold text-white">Boiler & Heating Upgrade Estimator</h2><p class="text-sm text-slate-400">3 quick questions, a straight answer from Chandler.</p></div></div>
+   <div class="mt-5 flex gap-2" id="est-steps"><span class="h-1.5 flex-1 rounded bg-cu"></span><span class="h-1.5 flex-1 rounded bg-white/15"></span><span class="h-1.5 flex-1 rounded bg-white/15"></span></div>
+   <div id="est-body" class="mt-6"></div>
+  </div>
+ </div>
+
+ <!-- Featured work -->
+ <div class="max-w-7xl mx-auto px-4 mt-16 mb-16">
+  <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Featured recent work</h2>
+  <div class="mt-6 grid md:grid-cols-2 gap-5">
+   <article class="glass rounded-2xl overflow-hidden"><div class="ph zoom aspect-[4/3] overflow-hidden"><img data-src="Boiler replacements (27 Aug).jpg" alt="Danville VT boiler replacement" class="w-full h-full object-cover"></div><div class="p-5"><p class="text-cu text-sm font-semibold">Aug 27 • Danville, VT</p><h3 class="text-white font-bold text-lg mt-1">Boiler Replacement</h3><p class="text-slate-300 text-sm mt-2">High-efficiency floor boiler and 4-zone copper manifold upgrade with a Super Contender indirect water heater.</p></div></article>
+   <article class="glass rounded-2xl overflow-hidden"><div class="ph zoom aspect-[4/3] overflow-hidden"><img data-src="plumbing & heating projects (19 Aug).jpg" alt="Middlebury VT under-slab radiant PEX" class="w-full h-full object-cover"></div><div class="p-5"><p class="text-hy text-sm font-semibold">Aug 19 • Middlebury, VT</p><h3 class="text-white font-bold text-lg mt-1">New Construction Radiant Slab</h3><p class="text-slate-300 text-sm mt-2">Under-slab hydronic radiant PEX over Styrofoam insulation, in partnership with Rainey Builders.</p></div></article>
+  </div>
+  <div class="text-center mt-8"><button data-go="projects" class="glass text-white font-bold px-6 py-3 rounded-xl hover:border-cu">View Full 8-Photo Work Gallery</button></div>
+ </div>
+</section>
+
+<!-- SERVICES -->
+<section id="view-services" class="view">
+ <div class="max-w-7xl mx-auto px-4 py-12">
+  <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Heating & plumbing services</h1>
+  <p class="text-slate-400 mt-2 max-w-2xl">Nine services, one licensed and insured operator. We travel across Vermont for remodels and new construction.</p>
+  <div class="mt-6 flex flex-wrap gap-2" id="svc-filters"></div>
+  <div id="svc-grid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+  <div class="mt-10 glass rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4"><p class="text-white font-semibold">Not sure which service fits? Describe the job and Chandler will point you the right way.</p><button data-go="contact" class="bg-cu text-white font-bold px-6 py-3 rounded-xl whitespace-nowrap">Request a Quote</button></div>
+ </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="view-projects" class="view">
+ <div class="max-w-7xl mx-auto px-4 py-12">
+  <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Project gallery</h1>
+  <p class="text-slate-400 mt-2">Real jobs from Chandler's own work. Tap any photo for the details.</p>
+  <div class="mt-6 flex flex-wrap gap-2" id="gal-filters"></div>
+  <div id="gal-grid" class="mt-6 grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 grid-flow-dense"></div>
+ </div>
+</section>
+
+<!-- ABOUT -->
+<section id="view-about" class="view">
+ <div class="max-w-6xl mx-auto px-4 py-12">
+  <div class="grid lg:grid-cols-2 gap-10 items-center">
+   <div>
+    <p class="text-cu font-semibold">Owner & operator</p>
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Meet Chandler Rainey</h1>
+    <p class="text-slate-300 mt-5">Chandler has nearly 10 years in the plumbing trade. Almost 3 years ago he established Rainey Plumbing & Heating, LLC, and he has since scaled it into a dedicated full-time operation to bring next-level mechanical craftsmanship to Vermont homeowners and builders.</p>
+    <p class="text-slate-300 mt-4">He is fully licensed and insured, and he handles the work himself, from the first walkthrough to the final pressure test.</p>
+   </div>
+   <div class="glass rounded-3xl p-2"><div class="ph zoom rounded-2xl overflow-hidden aspect-[4/3]"><img data-src="image 1.jpg" alt="Clean mechanical room by Rainey Plumbing & Heating" class="w-full h-full object-cover"></div></div>
+  </div>
+  <h2 class="text-2xl font-extrabold text-white mt-14">Why homeowners and builders trust Chandler</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-5">
+   <div class="glass rounded-2xl p-5"><i data-lucide="sparkles" class="w-6 h-6 text-cu"></i><h3 class="text-white font-bold mt-2">Mechanical rooms like artwork</h3><p class="text-sm text-slate-400 mt-1">Straight copper runs and tidy manifolds, like the 6-zone setup in our gallery.</p></div>
+   <div class="glass rounded-2xl p-5"><i data-lucide="message-square" class="w-6 h-6 text-hy"></i><h3 class="text-white font-bold mt-2">Honest communication</h3><p class="text-sm text-slate-400 mt-1">Clear answers on what you need, and what you don't.</p></div>
+   <div class="glass rounded-2xl p-5"><i data-lucide="truck" class="w-6 h-6 text-cu"></i><h3 class="text-white font-bold mt-2">Willing to travel</h3><p class="text-sm text-slate-400 mt-1">Remodels and new builds across Vermont.</p></div>
+   <div class="glass rounded-2xl p-5"><i data-lucide="shield-check" class="w-6 h-6 text-hy"></i><h3 class="text-white font-bold mt-2">Licensed & insured</h3><p class="text-sm text-slate-400 mt-1">Trusted by builders like Rainey Builders on custom new construction.</p></div>
+  </div>
+  <h2 class="text-2xl font-extrabold text-white mt-14">Common questions</h2>
+  <div id="faq" class="mt-5 grid gap-3 max-w-3xl"></div>
+ </div>
+</section>
+
+<!-- CONTACT -->
+<section id="view-contact" class="view">
+ <div class="max-w-6xl mx-auto px-4 py-12">
+  <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Get a free estimate</h1>
+  <p class="text-slate-400 mt-2">Call, email, or send the form. It goes straight to Chandler.</p>
+  <div class="mt-8 grid lg:grid-cols-5 gap-6">
+   <div class="lg:col-span-2 grid gap-4 content-start">
+    <a href="tel:+18022743436" class="glass rounded-2xl p-5 flex items-center gap-4 hover:border-cu"><span class="bg-cu/20 text-cu p-3 rounded-xl"><i data-lucide="phone" class="w-6 h-6"></i></span><div><p class="text-xs text-slate-400">Phone</p><p class="text-white font-bold">(802) 274-3436</p></div></a>
+    <a href="mailto:raineyph@gmail.com" class="glass rounded-2xl p-5 flex items-center gap-4 hover:border-hy"><span class="bg-hy/20 text-hy p-3 rounded-xl"><i data-lucide="mail" class="w-6 h-6"></i></span><div class="min-w-0"><p class="text-xs text-slate-400">Email</p><p class="text-white font-bold break-all">raineyph@gmail.com</p></div></a>
+    <div class="glass rounded-2xl p-5 flex items-center gap-4"><span class="bg-white/10 text-white p-3 rounded-xl"><i data-lucide="map-pin" class="w-6 h-6"></i></span><div><p class="text-xs text-slate-400">Service area</p><p class="text-white font-bold">Danville, Middlebury & Statewide Vermont Travel for Projects</p></div></div>
+   </div>
+   <form id="qform" class="lg:col-span-3 glass rounded-3xl p-5 sm:p-8 grid gap-4" novalidate>
+    <div class="grid sm:grid-cols-2 gap-4">
+     <label class="grid gap-1 text-sm">Full name<input id="f-name" class="field" required autocomplete="name"></label>
+     <label class="grid gap-1 text-sm">Phone number<input id="f-phone" type="tel" class="field" required autocomplete="tel"></label>
+    </div>
+    <label class="grid gap-1 text-sm">Town / location in VT<input id="f-town" class="field" required placeholder="e.g. Danville"></label>
+    <label class="grid gap-1 text-sm">Service needed<select id="f-service" class="field" required></select></label>
+    <label class="grid gap-1 text-sm">Project details<textarea id="f-details" rows="4" class="field" placeholder="Tell Chandler about the job, timeline, and current system."></textarea></label>
+    <p id="f-err" class="text-red-400 text-sm hidden">Please enter your name, phone number, and town.</p>
+    <button class="bg-cu hover:bg-orange-500 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-cu/30"><i data-lucide="send" class="w-5 h-5"></i>Request My Free Estimate</button>
+   </form>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="border-t border-white/10 mt-6">
+ <div class="max-w-7xl mx-auto px-4 py-8 text-sm text-slate-400 flex flex-col md:flex-row justify-between gap-3">
+  <p>© <span id="yr"></span> Rainey Plumbing & Heating, LLC. Fully licensed & insured.</p>
+  <p>Danville, VT • Middlebury, VT • Statewide for new construction & remodels</p>
+ </div>
+</footer>
+
+<!-- Mobile bottom bar -->
+<div class="md:hidden fixed bottom-0 inset-x-0 z-40 grid grid-cols-2 gap-2 p-2 border-t border-white/10" style="background:rgba(11,19,43,.95);backdrop-filter:blur(10px)">
+ <a href="tel:+18022743436" class="bg-hy text-white font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 text-sm"><i data-lucide="phone" class="w-5 h-5"></i>Call Chandler Now</a>
+ <button data-go="contact" class="bg-cu text-white font-bold py-3.5 rounded-xl flex items-center justify-center gap-2 text-sm"><i data-lucide="file-text" class="w-5 h-5"></i>Request Quote</button>
+</div>
+
+<!-- Lightbox -->
+<div id="lb" class="fixed inset-0 z-50 hidden bg-black/90 overflow-y-auto" role="dialog" aria-modal="true">
+ <div class="min-h-full flex items-center justify-center p-4">
+  <div class="relative glass rounded-3xl max-w-4xl w-full overflow-hidden pop" style="background:rgba(11,19,43,.97)">
+   <button id="lb-x" class="absolute top-3 right-3 z-10 bg-black/60 rounded-full p-2" aria-label="Close"><i data-lucide="x" class="w-5 h-5"></i></button>
+   <div class="ph bg-black"><img id="lb-img" alt="" class="w-full max-h-[60vh] object-contain"></div>
+   <div class="p-5 sm:p-7"><p id="lb-meta" class="text-cu text-sm font-semibold"></p><h3 id="lb-cap" class="text-white font-bold text-lg sm:text-xl mt-1"></h3><p id="lb-tech" class="text-slate-300 text-sm mt-3"></p>
+    <button id="lb-cta" class="mt-5 bg-cu text-white font-bold px-6 py-3 rounded-xl">Request Similar Work</button></div>
+  </div>
+ </div>
+</div>
+
+<!-- Confirmation -->
+<div id="cm" class="fixed inset-0 z-50 hidden bg-black/80 items-center justify-center p-4" role="dialog" aria-modal="true">
+ <div class="glass rounded-3xl max-w-md w-full p-7 text-center pop" style="background:rgba(11,19,43,.98)">
+  <div class="mx-auto w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center"><i data-lucide="check" class="w-9 h-9 text-green-400"></i></div>
+  <h3 class="text-white font-extrabold text-xl mt-4">Your estimate request is ready</h3>
+  <p class="text-slate-300 text-sm mt-2">One last step: send it to Chandler by email or text so it reaches him right away.</p>
+  <div class="grid gap-3 mt-6">
+   <a id="cm-mail" class="bg-cu text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2"><i data-lucide="mail" class="w-5 h-5"></i>Send by Email</a>
+   <a id="cm-sms" class="bg-hy text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2"><i data-lucide="message-circle" class="w-5 h-5"></i>Send by Text</a>
+   <button id="cm-x" class="text-slate-400 text-sm py-2">Close</button>
+  </div>
+ </div>
+</div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const PHONE='+18022743436',EMAIL='raineyph@gmail.com';
+const SERVICES=[
+{t:'High-Efficiency Boiler Installations & Replacements (Oil & Propane)',d:'Tailored upgrades for outdated systems to slash energy waste, reduce running costs, and deliver quiet, reliable winter comfort.',g:'Heating',i:'flame',f:1},
+{t:'Hydronic Heating & Under-Slab Radiant Systems',d:'Custom copper manifolds, multi-zone circulator setups, and under-slab PEX radiant tubing for unbeatable warmth.',g:'Heating',i:'waves',f:1},
+{t:'New Construction Plumbing & Heating',d:'Complete rough-ins, DWV piping, and mechanical room builds. Proudly partnering with top builders like Rainey Builders. We travel!',g:'Plumbing',i:'hammer',f:1},
+{t:'Kitchen, Bath & Whole-Home Remodels',d:'Rerouting supply lines, drainage, and upgrading fixtures for modern home renovations.',g:'Plumbing',i:'bath'},
+{t:'Oil Boiler & Furnace Servicing & Tune-Ups',d:'Annual maintenance, combustion checks, and emergency diagnostics for oil and propane units.',g:'Heating',i:'thermometer'},
+{t:'Oil Tank Replacement & Servicing',d:'Safe removal of aging tanks and code-compliant installation of modern fuel storage.',g:'Heating',i:'fuel'},
+{t:'Well Pumps & Pressure Equipment',d:'Diagnosis, repair, and replacement of submersible well pumps, pressure tanks, and water lines.',g:'Plumbing',i:'droplets',f:1},
+{t:'Septic Pumps & All Drainage Systems',d:'Effluent/septic pump replacements and complete residential PVC drainage/venting solutions.',g:'Plumbing',i:'pipette'},
+{t:'Full Forced-Air Heating Systems & Sheet Metal',d:'Furnace installations and custom-fitted ductwork plenums.',g:'Heating',i:'wind'}];
+const PROJ=[
+{img:'Boiler replacements (27 Aug).jpg',cat:'boil',meta:'Aug 27 • Danville, VT',cap:'High-Efficiency Floor Boiler & 4-Zone Copper Manifold Upgrade with Super Contender Indirect Water Heater – Danville, VT',tech:'A full boiler replacement: a high-efficiency boiler feeding a 4-zone copper manifold, with an indirect water heater for steady domestic hot water. Each zone is separately controlled, so rooms heat where and when you want.',big:1,svc:0},
+{img:'plumbing & heating projects (19 Aug).jpg',cat:'new',meta:'Aug 19 • Middlebury, VT',cap:'New Construction Under-Slab Hydronic Radiant PEX Tubing over Styrofoam Insulation (Partnered with Rainey Builders) – Middlebury, VT',tech:'PEX tubing laid in an even loop pattern over rigid insulation before the slab pour. The insulation keeps heat moving up into the living space instead of down into the ground.',big:1,svc:1},
+{img:'image 1.jpg',cat:'boil',meta:'Boilers & Hydronics',cap:'Precision 6-Zone IBC Wall-Hung Condensing Boiler & Custom Copper Hydronic Manifold with Super Contender Tank',tech:'Neat copper soldering, a custom 6-zone manifold, and a wall-hung condensing boiler paired with a Super Contender tank. Clean, labeled runs make future service simple.',svc:0},
+{img:'image 6.jpg',cat:'boil',meta:'Boilers & Hydronics',cap:'High-Efficiency Wall-Hung Boiler, 3-Zone Hydronic Setup & Suspended Garage Unit Heater',tech:'A compact wall-hung boiler with 3 heating zones, plus a suspended unit heater to keep the garage comfortable without using floor space.',svc:0},
+{img:'image 4.jpg',cat:'furn',meta:'Furnaces & Ductwork',cap:'Forced-Air Furnace & Custom Sheet Metal Plenum Installation',tech:'A forced-air furnace connected to a custom-built sheet metal plenum, sized and fitted to the equipment for smooth airflow.',svc:8},
+{img:'image 5.jpg',cat:'furn',meta:'Furnaces & Ductwork',cap:'Custom Fabricated Galvanized Sheet Metal Return Air Ductwork',tech:'Galvanized return air ductwork fabricated to fit the space, built for tight seams and good airflow back to the furnace.',svc:8},
+{img:'image 2.jpg',cat:'new',meta:'New Construction',cap:'New Construction Attic PVC DWV (Drain-Waste-Vent) Piping Rough-In',tech:'Drain-waste-vent piping roughed in at the attic level, run with proper pitch and venting for a code-compliant new build.',svc:2},
+{img:'image 3.jpg',cat:'new',meta:'New Construction',cap:'Residential New Construction Subfloor & Joist Plumbing Rough-In',tech:'Supply and drain lines routed through joists and subfloor during rough-in, planned so later trades have a clear path.',svc:2}];
+const FAQ=[
+['Do you service both oil and propane systems?','Yes. Chandler installs, services, and tunes up both oil and propane boilers and furnaces, and can also replace oil tanks.'],
+['How far do you travel for new construction?','We travel across Vermont for remodels and new construction. Danville and Middlebury are home base, and builders like Rainey Builders bring us in on custom homes.'],
+['Should I upgrade my old boiler before winter?','If your boiler is old, noisy, or burning more fuel than it used to, an upgrade can cut energy waste and avoid a no-heat emergency. Call for a straight assessment before the cold hits.'],
+['Do you work on well and septic pumps?','Yes. That includes submersible well pumps, pressure tanks and water lines, plus effluent/septic pumps and residential drainage.']];
+
+const imgSrc=f=>encodeURI(f);
+function loadImgs(root=document){root.querySelectorAll('img[data-src]').forEach(im=>{im.onerror=()=>{im.style.display='none';im.parentElement.classList.add('ph')};im.src=imgSrc(im.dataset.src);im.removeAttribute('data-src')})}
+const icons=()=>window.lucide&&lucide.createIcons();
+
+/* Routing */
+function go(v){
+ $$('.view').forEach(s=>s.classList.toggle('active',s.id==='view-'+v));
+ $$('nav .navl').forEach(b=>b.classList.toggle('on',b.dataset.go===v));
+ closeMenu();window.scrollTo({top:0,behavior:'smooth'});
+ history.replaceState(null,'','#'+v);
+}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(b){e.preventDefault();go(b.dataset.go)}});
+const mm=$('#mmenu');
+function closeMenu(){mm.style.maxHeight='0';$('#burger').setAttribute('aria-expanded','false')}
+$('#burger').onclick=()=>{const o=mm.style.maxHeight!=='0px'&&mm.style.maxHeight!=='0';if(o)closeMenu();else{mm.style.maxHeight=mm.scrollHeight+'px';$('#burger').setAttribute('aria-expanded','true')}};
+
+/* Services */
+const svcCard=(s,i)=>`<article class="glass rounded-2xl p-5 flex flex-col hover:border-cu/60 transition"><span class="w-11 h-11 rounded-xl flex items-center justify-center ${s.g==='Heating'?'bg-cu/20 text-cu':'bg-hy/20 text-hy'}"><i data-lucide="${s.i}" class="w-6 h-6"></i></span><h3 class="text-white font-bold mt-3 leading-snug">${s.t}</h3><p class="text-sm text-slate-400 mt-2 flex-1">${s.d}</p><button class="mt-4 text-left text-sm font-bold ${s.g==='Heating'?'text-cu':'text-hy'}" onclick="quote(${i})">Request this service</button></article>`;
+function quote(i,note){go('contact');$('#f-service').selectedIndex=i;if(note!=null)$('#f-details').value=note}
+$('#svc-preview').innerHTML=SERVICES.map((s,i)=>s.f?svcCard(s,i):'').join('').replace(/<article/g,'<article');
+let sf='All';
+function renderSvc(){
+ $('#svc-filters').innerHTML=['All','Heating','Plumbing'].map(f=>`<button data-f="${f}" class="px-4 py-2 rounded-full text-sm font-semibold border ${f===sf?'bg-cu border-cu text-white':'border-white/20 text-slate-300'}">${f==='All'?'All Services (9)':f==='Heating'?'Heating & Hydronics':'Plumbing & Pumps'}</button>`).join('');
+ $('#svc-grid').innerHTML=SERVICES.map((s,i)=>sf==='All'||s.g===sf?svcCard(s,i):'').join('');icons();
+}
+$('#svc-filters').onclick=e=>{const b=e.target.closest('[data-f]');if(b){sf=b.dataset.f;renderSvc()}};
+renderSvc();
+$('#f-service').innerHTML=SERVICES.map(s=>`<option>${s.t}</option>`).join('');
+
+/* Gallery */
+let gf='all';
+const GC=[['all','All Work (8)'],['boil','Boilers & Hydronics'],['new','New Construction & Radiant'],['furn','Furnaces & Ductwork']];
+function renderGal(){
+ $('#gal-filters').innerHTML=GC.map(([k,l])=>`<button data-k="${k}" class="px-4 py-2 rounded-full text-sm font-semibold border ${k===gf?'bg-cu border-cu text-white':'border-white/20 text-slate-300'}">${l}</button>`).join('');
+ $('#gal-grid').innerHTML=PROJ.map((p,i)=>gf==='all'||p.cat===gf?`<button onclick="openLb(${i})" class="zoom ph relative overflow-hidden rounded-2xl text-left group ${p.big&&gf==='all'?'col-span-2 row-span-2':''} aspect-square" style="min-height:150px"><img data-src="${p.img}" alt="${p.cap}" class="absolute inset-0 w-full h-full object-cover"><span class="absolute inset-x-0 bottom-0 p-3 sm:p-4 bg-gradient-to-t from-black/90 to-transparent"><span class="block text-cu text-xs font-semibold">${p.meta}</span><span class="block text-white text-xs sm:text-sm font-semibold line-clamp-2 mt-0.5" style="display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">${p.cap}</span></span></button>`:'').join('');
+ loadImgs($('#gal-grid'));
+}
+$('#gal-filters').onclick=e=>{const b=e.target.closest('[data-k]');if(b){gf=b.dataset.k;renderGal()}};
+renderGal();
+let cur=0;
+function openLb(i){cur=i;const p=PROJ[i];const im=$('#lb-img');im.style.display='';im.parentElement.classList.remove('ph');im.onerror=()=>{im.style.display='none';im.parentElement.classList.add('ph');im.parentElement.style.minHeight='200px'};im.src=imgSrc(p.img);im.alt=p.cap;
+ $('#lb-meta').textContent=p.meta;$('#lb-cap').textContent=p.cap;$('#lb-tech').textContent=p.tech;
+ $('#lb').classList.remove('hidden');document.body.style.overflow='hidden'}
+function closeLb(){$('#lb').classList.add('hidden');document.body.style.overflow=''}
+$('#lb-x').onclick=closeLb;$('#lb').onclick=e=>{if(e.target===e.currentTarget||e.target.classList.contains('min-h-full'))closeLb()};
+$('#lb-cta').onclick=()=>{const p=PROJ[cur];closeLb();quote(p.svc,'I\'d like similar work to this project: '+p.cap)};
+
+/* FAQ */
+$('#faq').innerHTML=FAQ.map((f,i)=>`<div class="glass rounded-2xl"><button class="w-full flex justify-between items-center gap-3 text-left p-5 font-semibold text-white" aria-expanded="false" data-q="${i}">${f[0]}<i data-lucide="chevron-down" class="w-5 h-5 flex-none transition-transform"></i></button><div class="faq-b"><p class="px-5 pb-5 text-slate-300 text-sm">${f[1]}</p></div></div>`).join('');
+$('#faq').onclick=e=>{const b=e.target.closest('[data-q]');if(!b)return;const body=b.nextElementSibling,o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',!o);body.style.maxHeight=o?'0':body.scrollHeight+'px';b.querySelector('svg,i').style.transform=o?'':'rotate(180deg)'};
+
+/* Estimator */
+const E={step:1,a:{}};
+const OPTS={1:['Boiler Replacement','New Construction Plumbing/Radiant','Well/Septic Pump','Furnace/Oil Tank Service','Remodel'],2:['Oil','Propane','Electric/Well','New Build'],3:['Urgent/Winter Ready','Within 1-3 Months','Planning New Construction']};
+const Q={1:'What do you need?',2:'Current fuel type',3:'Timeline'};
+const SVCMAP={'Boiler Replacement':0,'New Construction Plumbing/Radiant':2,'Well/Septic Pump':6,'Furnace/Oil Tank Service':4,'Remodel':3};
+function renderEst(){
+ $$('#est-steps span').forEach((s,i)=>s.className='h-1.5 flex-1 rounded '+(i<E.step?'bg-cu':'bg-white/15'));
+ if(E.step===4){recommend();return}
+ const n=E.step;
+ $('#est-body').innerHTML=`<p class="fh text-white font-bold text-lg">Step ${n} of 3: ${Q[n]}</p><div class="grid sm:grid-cols-2 gap-3 mt-4">${OPTS[n].map(o=>`<button class="opt rounded-xl p-4 text-left text-white font-medium ${E.a[n]===o?'sel':''}" data-o="${o}">${o}</button>`).join('')}</div>
+ <div class="flex justify-between mt-6">${n>1?'<button id="est-back" class="text-slate-300 px-4 py-3">Back</button>':'<span></span>'}<button id="est-next" class="bg-cu text-white font-bold px-6 py-3 rounded-xl ${E.a[n]?'':'opacity-40 pointer-events-none'}">${n===3?'See Recommendation':'Next'}</button></div>`;
+}
+$('#est-body').onclick=e=>{
+ const o=e.target.closest('[data-o]');if(o){E.a[E.step]=o.dataset.o;renderEst();return}
+ if(e.target.closest('#est-back')){E.step--;renderEst()}
+ else if(e.target.closest('#est-next')){E.step++;renderEst()}
+ else if(e.target.closest('#est-reset')){E.step=1;E.a={};renderEst()}
+ else if(e.target.closest('#est-quote')){const a=E.a;quote(SVCMAP[a[1]],`Estimator: ${a[1]} | Fuel/setup: ${a[2]} | Timeline: ${a[3]}`)}
+};
+function recommend(){
+ const [a,f,t]=[E.a[1],E.a[2],E.a[3]];
+ const base={'Boiler Replacement':'A new high-efficiency boiler with properly sized zones can cut fuel waste and quiet down your heat. I match the boiler to your home, pipe it in clean copper, and add an indirect water heater when it makes sense.','New Construction Plumbing/Radiant':'I handle the full rough-in, from DWV piping to under-slab PEX radiant over insulation, and I work alongside builders like Rainey Builders. Early planning means fewer surprises on site.','Well/Septic Pump':'I diagnose and replace submersible well pumps, pressure tanks, and effluent/septic pumps, and repair the lines that feed them.','Furnace/Oil Tank Service':'I service and tune oil and propane equipment with combustion checks, and I can safely remove an aging oil tank and install a code-compliant replacement.','Remodel':'I reroute supply and drain lines and upgrade fixtures so your kitchen, bath, or whole-home remodel works as well as it looks.'}[a];
+ const fuel={'Oil':'Since you run on oil, I can service it, upgrade it, or replace your tank.','Propane':'Propane works well with modern condensing equipment, and I install and service it.','Electric/Well':'With electric/well systems, I look at your pump, pressure tank, and water lines first.','New Build':'For a new build, we can plan the whole mechanical room before the walls close up.'}[f];
+ const time={'Urgent/Winter Ready':'Because you need to be winter-ready, call me directly at (802) 274-3436 and we will get you on the schedule.','Within 1-3 Months':'A 1 to 3 month window is a good time to get an estimate and line up equipment before the cold rush.','Planning New Construction':'Planning ahead is smart. Send the plans or details and I will help you with timing and scope.'}[t];
+ $('#est-body').innerHTML=`<div class="pop rounded-2xl p-5 border border-cu/40 bg-cu/10"><p class="text-cu font-semibold text-sm">A note from Chandler</p><p class="text-white mt-2">${base}</p><p class="text-slate-200 mt-2 text-sm">${fuel} ${time}</p></div><div class="flex flex-col sm:flex-row gap-3 mt-5"><button id="est-quote" class="bg-cu text-white font-bold px-6 py-3 rounded-xl">Get My Free Estimate</button><a href="tel:${PHONE}" class="glass text-white font-bold px-6 py-3 rounded-xl text-center">Call (802) 274-3436</a><button id="est-reset" class="text-slate-300 px-4 py-3">Start over</button></div>`;
+}
+renderEst();
+
+/* Form */
+$('#qform').onsubmit=e=>{
+ e.preventDefault();
+ const v=id=>$('#'+id).value.trim(),name=v('f-name'),phone=v('f-phone'),town=v('f-town'),svc=v('f-service'),det=v('f-details');
+ if(!name||!phone||!town){$('#f-err').classList.remove('hidden');return}
+ $('#f-err').classList.add('hidden');
+ const body=`Hi Chandler,\n\nName: ${name}\nPhone: ${phone}\nTown: ${town}, VT\nService: ${svc}\nDetails: ${det||'(none)'}\n\nSent from your website.`;
+ $('#cm-mail').href=`mailto:${EMAIL}?subject=${encodeURIComponent('Estimate request: '+svc)}&body=${encodeURIComponent(body)}`;
+ $('#cm-sms').href=`sms:${PHONE}?body=${encodeURIComponent(body)}`;
+ $('#cm').classList.remove('hidden');$('#cm').classList.add('flex');
+};
+$('#cm-x').onclick=()=>{$('#cm').classList.add('hidden');$('#cm').classList.remove('flex')};
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeLb();$('#cm-x').click()}});
+
+/* Init */
+$('#yr').textContent=new Date().getFullYear();
+loadImgs();icons();
+const h=location.hash.slice(1);if(['home','services','projects','about','contact'].includes(h))go(h);else go('home');
+</script>
+</body>
+</html>
